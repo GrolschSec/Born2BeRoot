@@ -1,5 +1,5 @@
 
-Cloning the repo:
-'''
-git clone <myrepo>
-'''
+Showing all dir:
+```
+ls -lah
+```
