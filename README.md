@@ -25,3 +25,8 @@
 	![sshd_config PermitRootLogin](https://github.com/GrolschSec/BornToBeRoot/blob/main/Screenshot/16.png)
 - Restart now the SSH Server:
 	```systemctl restart ssh```
+## Install Sudo
+- Install the sudo package:
+	```apt install sudo```
+- Add a user to the sudo group:
+	```/usr/sbin/usermod -aG sudo <username>```
