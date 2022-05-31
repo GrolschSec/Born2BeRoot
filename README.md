@@ -39,3 +39,12 @@
 - Connecting:
 	```ssh -p 9042 <username>@127.0.0.1```
 
+## Install the Uncomplicated Firewall
+- Install the ufw package:
+	```sudo apt install ufw```
+- Add a rule to allow any connexion to our ssh server:
+	```sudo ufw allow 4242```
+- Enable the firewall:
+	```sudo ufw enable```
+- You can check the firewall status:
+	```sudo ufw status```
