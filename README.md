@@ -1,5 +1,9 @@
 # [TUTO] Born To Be Root
 
+## Basic Instalation
+
+## Port Forwarding in VirtualBox
+
 ## Add an SSH Server:
 - Log as root: 
 	```su```
