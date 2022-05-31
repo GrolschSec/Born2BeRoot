@@ -23,3 +23,5 @@
 - We don't want that someone can login directly to root trough ssh so we will prohibit it.
 - Change the 'PermitRootLogin' to no:
 	![sshd_config PermitRootLogin](https://github.com/GrolschSec/BornToBeRoot/blob/main/Screenshot/16.png)
+- Restart now the SSH Server:
+	```systemctl restart ssh```
