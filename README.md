@@ -4,7 +4,7 @@
 
 ## Port Forwarding in VirtualBox
 
-## Add an SSH Server:
+## Add an SSH Server
 - Log as root: 
 	```su```
 - Install the SSH Server: 
@@ -12,7 +12,7 @@
 - Enable the SSH Server at startup: 
 	```systemctl enable ssh```
 
-## Configure the SSH Server:
+## Configure the SSH Server
 - In linux the configuration files are in /etc/ and specially for ssh is '/etc/ssh/'.
 - The file for the server config is sshd_config.
 - Edit the file:
@@ -30,3 +30,12 @@
 	```apt install sudo```
 - Add a user to the sudo group:
 	```/usr/sbin/usermod -aG sudo <username>```
+## Connect trough SSH:
+- Open a new terminal in your host machine.
+- The basic syntax to connect with ssh is 'ssh <username>@<IP>'.
+- Since we are not using the default ssh port (22) we'll have to add the flag '-p'.
+- The port you will use to connect is the one you configured in VirtualBox Port Forwarding.
+- The Ip we'll use is our loopback (127.0.0.1).
+- Connecting:
+	```ssh -p 9042 <username>@127.0.0.1```
+
