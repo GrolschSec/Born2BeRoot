@@ -11,3 +11,10 @@
 	```apt install openssh-server```
 - Enable the SSH Server at startup: 
 	```systemctl enable ssh```
+
+## Configure the SSH Server:
+- In linux the configuration files are in /etc/ and specially for ssh is '/etc/ssh/'.
+- The file for the server config is sshd_config.
+- Edit the file:
+	```sudo nano /etc/ssh/sshd_config```
+- We'll edit two parameters in the file the root login perm and the port we want ssh use.
