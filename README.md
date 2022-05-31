@@ -1,4 +1,4 @@
-#[TUTO]Born To Be Root
+# [TUTO]Born To Be Root
 
 3 - Add an SSH Server:
     - Log as root:
