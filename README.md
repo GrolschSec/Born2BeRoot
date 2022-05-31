@@ -18,3 +18,5 @@
 - Edit the file:
 	```sudo nano /etc/ssh/sshd_config```
 - We'll edit two parameters in the file the root login perm and the port we want ssh use.
+- Change the port config to '4242' and uncomment:
+	![sshd_config PORT](https://github.com/GrolschSec/BornToBeRoot/blob/main/Screenshot/15.png)
