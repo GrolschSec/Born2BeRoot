@@ -5,11 +5,14 @@
     ```
     su
     ```
+
     - Install the SSH Server:
     ```
     apt install openssh-server
     ```
+
     - Enable the SSH Server at startup:
     ```
     systemctl enable ssh
     ```
+ 
