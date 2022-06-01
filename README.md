@@ -41,6 +41,8 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/6.png)
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/7.png)
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/8.png)
+5 - Now we have to make all the encrypted partition and configure lvm for make the same as in the bonus part:
+![5](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/bonus.png)
 
 ## Add an SSH Server
 Log as root:  
