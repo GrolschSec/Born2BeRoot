@@ -30,9 +30,9 @@ Add the host port of your choice and the guest port 4242 (for ssh).
 ### Partition Disks
 In this part i'll partition as it is asked for the bonus part, if you don't want to do the bonus you can skip this part and just choose 'Guided Partitioning with encrypted LVM'.  
 1 - Choose Manual.  
-2 - Choose SCSI1.
-3 - Create new empty partition table: yes.
-![4](https://github.com/GrolschSec/Born2BeRoot/tree/main/Screenshot/boot/1.png)
+2 - Choose SCSI1.  
+3 - Create new empty partition table: yes.  
+![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/1.png)
 
 ## Add an SSH Server
 Log as root:  
