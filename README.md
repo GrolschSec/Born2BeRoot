@@ -32,6 +32,7 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 1 - Choose Manual.  
 2 - Choose SCSI1.  
 3 - Create new empty partition table: yes.  
+4 - Create the partition for boot:
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/1.png)
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/2.png)
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/3.png)
