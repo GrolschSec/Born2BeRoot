@@ -10,6 +10,8 @@ In VirtualBox click on New:
 Name you VM, give the path where you want to save your VM (In 42 School, you have to put you VM in 'sgoinfre' if not it will crash).  
 Then select type 'Linux' and version 'Debian (64 bit).  
 ![VM Info](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/2.png)  
+It will ask you how much memory you want to allocate to the VM (You can keep default value).
+For the hard disk, choose create a new one, VDI and Dynamicaly allocated and keep 8G default.
 
 ## Debian Instalation
 
