@@ -1,4 +1,4 @@
-# Born To Be Root
+# Born2BeRoot
 
 ## Table of contents
 
