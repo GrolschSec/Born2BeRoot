@@ -4,11 +4,35 @@
 
 ## VirtualBox Instalation
 First you have to download the OS you want to use for your Virtual Machine.  
-In this tutorial i'll use Debian 11.3.0 ([bullseye](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)).
-
+In this tutorial i'll use Debian 11.3.0 ([bullseye](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)).  
+In VirtualBox click on New:  
+![VirtualBox New VM](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/1.png)  
+Name you VM, give the path where you want to save your VM (In 42 School, you have to put you VM in 'sgoinfre' if not it will crash).  
+Then select type 'Linux' and version 'Debian (64 bit).  
+![VM Info](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/2.png)  
+It will ask you how much memory you want to allocate to the VM (You can keep default value).  
+For the hard disk, choose create a new one, VDI and Dynamicaly allocated and keep 8G default.  
+Go to settings and then the storage, click under controller IDE, click the small disk as shown below:
+![OS Select](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/4.png)
+Click choose a disk file and select your Debian ISO file.
+### VirtualBox Port Forwarding
+Since we are using a Virtual Machine and not a real one if we want to host services and access it from another machine we cannot just open a port in the Virtual Machine and leave it away, we'll have to use Port Forwarding.  
+This just mean that we are gonna redirect the port of our VM to a local port of the host machine, in our example we'll redirect the port 4242 for our SSH Server to our local port 9042.  
+We could use the local port 4242 too but in the 42 School this port is already used by another ssh service from the school, so we have to choose another one that isn't used (you can check the local tcp ports in use with the command: ```netstat -antp```).  
+Go to the VM Settings and go to the submenu Network, select Advanced and click on port forwarding:
+![Port Forwarding](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/6.png)
+Add the host port of your choice and the guest port 4242 (for ssh).
 ## Debian Instalation
+- Choose your Language  
+- Choose your Location
+- Choose your keyboard
 
-## Port Forwarding in VirtualBox
+### Partition Disks
+In this part i'll partition as it is asked for the bonus part, if you don't want to do the bonus you can skip this part and just choose 'Guided Partitioning with encrypted LVM'.  
+1 - Choose Manual.  
+2 - Choose SCSI1.
+3 - Create new empty partition table: yes.
+![4](https://github.com/GrolschSec/Born2BeRoot/tree/main/Screenshot/boot/1.png)
 
 ## Add an SSH Server
 Log as root:  
