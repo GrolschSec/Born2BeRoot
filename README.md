@@ -1,15 +1,19 @@
 # Born To Be Root
 
-## Basic Instalation
+## Table of contents
+
+## VirtualBox Instalation
+
+## Debian Instalation
 
 ## Port Forwarding in VirtualBox
 
 ## Add an SSH Server
-- Log as root: 
+Log as root: 
 	```su```
-- Install the SSH Server: 
+Install the SSH Server: 
 	```apt install openssh-server```
-- Enable the SSH Server at startup: 
+Enable the SSH Server at startup: 
 	```systemctl enable ssh```
 
 ## Configure the SSH Server
