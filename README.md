@@ -4,7 +4,12 @@
 
 ## VirtualBox Instalation
 First you have to download the OS you want to use for your Virtual Machine.  
-In this tutorial i'll use Debian 11.3.0 ([bullseye](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)).
+In this tutorial i'll use Debian 11.3.0 ([bullseye](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)).  
+In VirtualBox click on New:  
+![VirtualBox New VM](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/1.png)  
+Name you VM, give the path where you want to save your VM (In 42 School, you have to put you VM in 'sgoinfre' if not it will crash).  
+Then select type 'Linux' and version 'Debian (64 bit).  
+![VM Info](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/2.png)  
 
 ## Debian Instalation
 
