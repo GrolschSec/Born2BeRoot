@@ -12,9 +12,14 @@ Then select type 'Linux' and version 'Debian (64 bit).
 ![VM Info](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/2.png)  
 It will ask you how much memory you want to allocate to the VM (You can keep default value).  
 For the hard disk, choose create a new one, VDI and Dynamicaly allocated and keep 8G default.  
-Go to settings and then the storage, click under controller IDE, click the small disk as shown below:  
-![OS Select](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/4.png) 
+Go to settings and then the storage, click under controller IDE, click the small disk as shown below:
+![OS Select](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/4.png)
 Click choose a disk file and select your Debian ISO file.  
+
+### VirtualBox Port Forwarding
+Since we are using a Virtual Machine and not a real one if we want to host services and access it from another machine we cannot just open a port in the Virtual Machine and leave it away, we'll have to use Port Forwarding.  
+This just mean that we are gonna redirect the port of our VM to a local port of the host machine, in our example we'll redirect the port 4242 for our SSH Server to our local port 9042.  
+We could use the local port 4242 too but in the 42 School this port is already used by another ssh service from the school, so we have to choose another one that isn't used (you can check the local tcp ports in use with the command: ```netstat -antp```).  
 
 ## Debian Instalation
 
