@@ -140,7 +140,7 @@ Defaults	requiretty
 ```  
 To add a personalized message if the attempt of connection fails:
 ```  
-Defaults    badpass_message="GAME OVER !!!"
+Defaults	badpass_message="GAME OVER !!!"
 ```  
 
 ## Connect trough SSH:
