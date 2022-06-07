@@ -70,13 +70,13 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 23 - For most of them you'll have to select "Use as Ext4".
 24 - Then you'll have to select their mount point depending on which logical volume you target (Example: home Mount-Point = /home).  
 25 - There is two execeptions:  
-		- First from the swap you'll select "Use as: swap area".  
-		- Second, from var-log, you select "Use as: ext4" and then for mount point you enter it manually "/var/log".  
+- - First from the swap you'll select "Use as: swap area".  
+- - Second, from var-log, you select "Use as: ext4" and then for mount point you enter it manually "/var/log".  
 26 - Finish Partitionning.  
 ### Finish Instalation
 - Installing the base system automatically.  
 - Scan extra installation media: No  
-- - Configure the package manager: Select your country and the default link  
+- Configure the package manager: Select your country and the default link  
 - Proxy: Leave it blank.  
 - Participate in the package usage survey: No  
 - Software Selection: Unselect Everything (Using space).  
