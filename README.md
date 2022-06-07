@@ -236,7 +236,7 @@ Change the password of the users that exist to make them respect the new policy:
 ```  
 passwd
 ```  
-Change the policy for min days, max days and Warming:
+Change the policy for min days, max days and Warning:
 ```  
 sudo chage -m 2 -M 30 -W 7 <username>
 ```  
