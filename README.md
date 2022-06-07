@@ -1,8 +1,12 @@
 # Born2BeRoot
 
 ## Table of contents
+- [VirtualBox Installation](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#virtualbox-instalation)
 - [Set up a Strong Password Policy](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#set-up-a-strong-password-policy)
-## VirtualBox Instalation
+- [Debian Installation](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#debian-instalation)
+- - [Partition Disks](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#partition-disks)
+
+## VirtualBox Installation
 First you have to download the OS you want to use for your Virtual Machine.  
 In this tutorial i'll use Debian 11.3.0 ([bullseye](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)).  
 In VirtualBox click on New:  
