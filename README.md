@@ -168,12 +168,14 @@ Defaults	badpass_message="GAME OVER !!!"
 
 ## Connect trough SSH:
 Open a new terminal in your host machine.  
-The basic syntax to connect with ssh is 'ssh username@IP'.  
+The basic syntax to connect with ssh is ```ssh username@IP```.  
 Since we are not using the default ssh port (22) we'll have to add the flag '-p'.  
 The port you will use to connect is the one you configured in VirtualBox Port Forwarding.  
 The Ip we'll use is our loopback (127.0.0.1).  
 Connecting:  
-	```ssh -p 9042 <username>@127.0.0.1```  
+```
+ssh -p 9042 <username>@127.0.0.1
+```  
 
 ## Install the Uncomplicated Firewall
 Install the ufw package:  
