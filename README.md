@@ -110,6 +110,39 @@ Install the sudo package:
 	```apt install sudo```  
 Add a user to the sudo group:  
 	```/usr/sbin/usermod -aG sudo <username>```  
+  
+## Configure Sudo  
+To configure sudo we have to access the sudoers file.
+A command exist in linux to directly edit it: ```visudo```.  
+First We can copy and past the path given in the subject in the line below:
+```  
+Defaults	secure_path="PATH"  
+```  
+To set the password tries to 3 we copy the following line:
+```  
+Defaults        passwd_tries=3
+```  
+To enable the log for the inputs of sudo:
+```  
+Defaults	log_input
+```  
+To enable the log for the outputs of sudo:
+```  
+Defaults	log_output
+```  
+To set the path where we'll save the logfiles:
+```  
+Defaults	iolog_dir=/var/log/sudo/
+```   
+To set the tty as an obligation to use sudo:
+```  
+Defaults	requiretty
+```  
+To add a personalized message if the attempt of connection fails:
+```  
+Defaults    badpass_message="GAME OVER !!!"
+```  
+
 ## Connect trough SSH:
 Open a new terminal in your host machine.  
 The basic syntax to connect with ssh is 'ssh username@IP'.  
