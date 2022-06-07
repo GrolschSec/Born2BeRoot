@@ -72,6 +72,7 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 25 - There is two execeptions:  
 - First from the swap you'll select "Use as: swap area".  
 - Second, from var-log, you select "Use as: ext4" and then for mount point you enter it manually "/var/log".  
+  
 26 - Finish Partitionning.  
 ### Finish Installation
 - Installing the base system automatically.  
