@@ -23,9 +23,16 @@ Go to the VM Settings and go to the submenu Network, select Advanced and click o
 ![Port Forwarding](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/6.png)
 Add the host port of your choice and the guest port 4242 (for ssh).
 ## Debian Instalation
-- Choose your Language  
-- Choose your Location
-- Choose your keyboard
+- Language: English
+- Location: France
+- Keyboard: American English
+- Network config will automatically process
+- Hostname: YourLogin42 + 42
+- Domain: Leave it blank
+- Root Password: Set an password that you'll remember
+- User Full Name: You can leave it blank
+- Username: Any
+- Password: A password you will remember
 
 ### Partition Disks
 In this part i'll partition as it is asked for the bonus part, if you don't want to do the bonus you can skip this part and just choose 'Guided Partitioning with encrypted LVM'.  
