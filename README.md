@@ -66,7 +66,16 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 	- First from the swap you'll select "Use as: swap area".  
 	- Second, from var-log, you select "Use as: ext4" and then for mount point you enter it manually "/var/log".  
 26 - Finish Partitionning.  
-
+### Finish Instalation
+- Installing the base system automatically.  
+- Scan extra installation media: No  
+- - Configure the package manager: Select your country and the default link  
+- Proxy: Leave it blank.  
+- Participate in the package usage survey: No  
+- Software Selection: Unselect Everything (Using space).  
+- Install the Grub boot loader to your primary drive: Yes  
+- Select the /dev/sda   
+- Finish Instalation.  
 ## Add an SSH Server
 Log as root:  
 	```su```  
