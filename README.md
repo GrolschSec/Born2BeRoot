@@ -192,8 +192,7 @@ We finally get the line below:
 password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
 ```  
 
-
-
-
-
-
+You'll have to change then the policy for users that already exists (root), use the command bellow:  
+```  
+sudo chage -m 2 -M 30 -W 7 <username>
+```  
