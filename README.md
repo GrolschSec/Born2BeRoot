@@ -153,6 +153,9 @@ We'll use those options:
 - ```reject_username``` to check if the username is in the password and reject it in this case.  
 - ```difok=7```to check if the new password is different of 7 characters from the old one.  
 - ```enforce_for_root``` to set the policy for root.  
+We finally get the line below:  
+```password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root```  
+
 
 
 
