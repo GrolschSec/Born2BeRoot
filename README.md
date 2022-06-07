@@ -139,7 +139,7 @@ To configure sudo we have to access the sudoers file.
 A command exist in linux to directly edit it: ```visudo```.  
 First We can copy and past the path given in the subject in the line below:
 ```  
-Defaults	secure_path="PATH"  
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"  
 ```  
 To set the password tries to 3 we copy the following line:
 ```  
