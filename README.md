@@ -95,17 +95,25 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 - Finish Instalation.  
 ## Add an SSH Server
 Log as root:  
-	```su```  
+```  
+su
+```  
 Install the SSH Server:  
-	```apt install openssh-server```  
+```
+apt install openssh-server
+```  
 Enable the SSH Server at startup:   
-	```systemctl enable ssh```  
+```  
+systemctl enable ssh
+```  
 
 ## Configure the SSH Server
 In linux the configuration files are in /etc/ and specially for ssh is '/etc/ssh/'.  
 The file for the server config is sshd_config.  
 Edit the file:  
-	```nano /etc/ssh/sshd_config```  
+```  
+nano /etc/ssh/sshd_config
+```   
 We'll edit two parameters in the file the root login perm and the port we want ssh use.  
 Change the port config to '4242' and uncomment:  
 	![sshd_config PORT](https://github.com/GrolschSec/BornToBeRoot/blob/main/Screenshot/15.png)  
@@ -113,12 +121,18 @@ We don't want that someone can login directly to root trough ssh so we will proh
 Change the 'PermitRootLogin' to no:  
 	![sshd_config PermitRootLogin](https://github.com/GrolschSec/BornToBeRoot/blob/main/Screenshot/16.png)
 Restart now the SSH Server:  
-	```systemctl restart ssh```  
+```  
+systemctl restart ssh
+```    
 ## Install Sudo
 Install the sudo package:  
-	```apt install sudo```  
+```
+apt install sudo
+```  
 Add a user to the sudo group:  
-	```/usr/sbin/usermod -aG sudo <username>```  
+```
+/usr/sbin/usermod -aG sudo <username>
+```  
   
 ## Configure Sudo  
 To configure sudo we have to access the sudoers file.
