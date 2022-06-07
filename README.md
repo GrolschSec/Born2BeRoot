@@ -50,16 +50,16 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 10 - Write the change and erase the partition data.  
 11 - Encryption Passphrase: Select a good password it'll serve you to decrypt your partition before entering the system.  
 12 - Select "Configure the Logical Volume Manager".  
-13 - Select "Create Volume Group".
-14 - Volume Group Name: LVMGroup.
-15 - Select the encrypted partition we just created (sd5_crypt).
-16 - Create Logical Volume.
-17 - Select LVMGroup.
-18 - Logical Volume Name: root
-19 - Logical Volume Size: 2G
-20 - Repeat line 16 to 19 for giving name as (swap, home, var, srv, tmp, var-log) and giving 1G as size.
+13 - Select "Create Volume Group".  
+14 - Volume Group Name: LVMGroup.  
+15 - Select the encrypted partition we just created (sd5_crypt).  
+16 - Create Logical Volume.  
+17 - Select LVMGroup.  
+18 - Logical Volume Name: root  
+19 - Logical Volume Size: 2G  
+20 - Repeat line 16 to 19 for giving name as (swap, home, var, srv, tmp, var-log) and giving 1G as size.  
 21 - Once you have all your lvm volume, finish.  
-22 - Select the size below each Logical Volume.
+22 - Select the size below each Logical Volume.  
 23 - For most of them you'll have to select "Use as Ext4".
 24 - Then you'll have to select their mount point depending on which logical volume you target (Example: home Mount-Point = /home).  
 25 - There is two execeptions:  
