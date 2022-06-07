@@ -128,7 +128,7 @@ Enable the firewall:
 You can check the firewall status:  
 	```sudo ufw status```  
 
-## Set Up a Strong Password Policy
+## Set up a Strong Password Policy
 First of all we'll to set up the time of validity of our passwords.  
 We can edit the file 'login.defs' for this.  
 ```sudo nano /etc/login.defs```  
@@ -136,6 +136,25 @@ To set the password expiring every 30 days we'll edit the line below:
 ```160 PASS_MAX_DAYS   99999``` to this ```160 PASS_MAX_DAYS   30```  
 To set minimum number of days between password changes we'll edit the line below:  
 ```161 PASS_MIN_DAYS   0``` to this ```161 PASS_MIN_DAYS   2```  
-To set an alert 7 days before the password expire is in the line below but it's already 7 as default:  
-```162 PASS_WARN_AGE   7```
+To set an alert 7 days before the password expire is in the line below but it's already 7 as default:   
+```162 PASS_WARN_AGE   7```   
+   
+Then we'll set up the Password strength.  
+Install the libpam-pwquality package:  
+```sudo apt install libpam-pwquality```
+We can then edit the password strength policy in the config file '/etc/pam.d/common-password'.  
+```sudo nano /etc/pam.d/common-password```
+We will edit the line 25 shown below:  
+```password        requisite                       pam_pwquality.so retry=3```  
+We'll use those options:   
+- ```minlen=10``` to specify the len minimum of our password.  
+- ```ucredit=-1 dcredit=-1```to require password to have at least 1 uppercase and 1 digit.  
+- ```maxrepeat=3``` to set the maximum of repeating characters.  
+- ```reject_username``` to check if the username is in the password and reject it in this case.  
+- ```difok=7```to check if the new password is different of 7 characters from the old one.  
+- ```enforce_for_root``` to set the policy for root.  
+
+
+
+
 
