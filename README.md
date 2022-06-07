@@ -196,3 +196,7 @@ You'll have to change then the policy for users that already exists (root), use 
 ```  
 sudo chage -m 2 -M 30 -W 7 <username>
 ```  
+Change the password of the users that exist to make them respect the new policy:  
+```  
+passwd
+```  
