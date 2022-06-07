@@ -198,9 +198,13 @@ To set an alert 7 days before the password expire is in the line below but it's 
    
 Then we'll set up the Password strength.  
 Install the libpam-pwquality package:  
-```sudo apt install libpam-pwquality```  
+```  
+sudo apt install libpam-pwquality
+```  
 We can then edit the password strength policy in the config file '/etc/pam.d/common-password'.  
-```sudo nano /etc/pam.d/common-password```  
+```  
+sudo nano /etc/pam.d/common-password
+```  
 We will edit the line 25 shown below:  
 ```password        requisite                       pam_pwquality.so retry=3```  
 We'll use those options:   
