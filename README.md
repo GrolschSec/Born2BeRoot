@@ -177,18 +177,28 @@ Connecting:
 
 ## Install the Uncomplicated Firewall
 Install the ufw package:  
-	```sudo apt install ufw```  
+```
+sudo apt install ufw
+```  
 Add a rule to allow any connexion to our ssh server:  
-	```sudo ufw allow 4242```  
+```
+sudo ufw allow 4242
+```  
 Enable the firewall:  
-	```sudo ufw enable```  
+```
+sudo ufw enable
+```  
 You can check the firewall status:  
-	```sudo ufw status```  
+```
+sudo ufw status
+```  
 
 ## Set up a Strong Password Policy
 First of all we'll to set up the time of validity of our passwords.  
 We can edit the file 'login.defs' for this.  
-```sudo nano /etc/login.defs```  
+```
+sudo nano /etc/login.defs
+```  
 To set the password expiring every 30 days we'll edit the line below:  
 ```PASS_MAX_DAYS   99999``` to this ```PASS_MAX_DAYS   30```  
 To set minimum number of days between password changes we'll edit the line below:  
