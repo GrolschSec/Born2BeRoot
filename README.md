@@ -127,3 +127,15 @@ Enable the firewall:
 	```sudo ufw enable```  
 You can check the firewall status:  
 	```sudo ufw status```  
+
+## Set Up a Strong Password Policy
+First of all we'll to set up the time of validity of our passwords.  
+We can edit the file 'login.defs' for this.  
+```sudo nano /etc/login.defs```  
+To set the password expiring every 30 days we'll edit the line below:  
+```160 PASS_MAX_DAYS   99999``` to this ```160 PASS_MAX_DAYS   30```  
+To set minimum number of days between password changes we'll edit the line below:  
+```161 PASS_MIN_DAYS   0``` to this ```161 PASS_MIN_DAYS   2```  
+To set an alert 7 days before the password expire is in the line below but it's already 7 as default:  
+```162 PASS_WARN_AGE   7```
+
