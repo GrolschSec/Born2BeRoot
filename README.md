@@ -48,7 +48,7 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/6.png)
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/7.png)
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/8.png)
-5 - Now we have to make all the encrypted partition and configure lvm to make the same as in the bonus part:
+5 - Now we have to make the encrypted partition and configure lvm to make the same as in the bonus part:
 ![5](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/bonus.png)
 6 - Select "Configure encrypted volumes".  
 7 - Write the changes to disk and configure: Yes.  
