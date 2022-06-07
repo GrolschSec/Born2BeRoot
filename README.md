@@ -2,9 +2,14 @@
 
 ## Table of contents
 - [VirtualBox Installation](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#virtualbox-instalation)
-- [Set up a Strong Password Policy](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#set-up-a-strong-password-policy)
 - [Debian Installation](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#debian-instalation)
-- - [Partition Disks](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#partition-disks)
+- [Add an SSH Server](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#add-an-ssh-server)
+- [Configure the SSH Server](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#configure-the-ssh-server)
+- [Install Sudo](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#install-sudo)
+- [Configure Sudo](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#configure-sudo)
+- [Connect trough SSH](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#connect-trough-ssh)
+- [Install the Uncomplicated Firewall](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#install-the-uncomplicated-firewall)
+- [Set up a Strong Password Policy](https://github.com/GrolschSec/Born2BeRoot/blob/main/README.md#set-up-a-strong-password-policy)
 
 ## VirtualBox Installation
 First you have to download the OS you want to use for your Virtual Machine.  
