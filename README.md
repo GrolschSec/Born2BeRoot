@@ -43,7 +43,29 @@ In this part i'll partition as it is asked for the bonus part, if you don't want
 ![4](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/boot/8.png)
 5 - Now we have to make all the encrypted partition and configure lvm to make the same as in the bonus part:
 ![5](https://github.com/GrolschSec/Born2BeRoot/blob/main/Screenshot/bonus.png)
-6 - Creating the Encrypted Partition:
+6 - Select "Configure encrypted volumes".  
+7 - Write the changes to disk and configure: Yes.  
+8 - Create encrypted volume.  
+9 - Select the free space(click space to select) and continue.  
+10 - Write the change and erase the partition data.  
+11 - Encryption Passphrase: Select a good password it'll serve you to decrypt your partition before entering the system.  
+12 - Select "Configure the Logical Volume Manager".  
+13 - Select "Create Volume Group".
+14 - Volume Group Name: LVMGroup.
+15 - Select the encrypted partition we just created (sd5_crypt).
+16 - Create Logical Volume.
+17 - Select LVMGroup.
+18 - Logical Volume Name: root
+19 - Logical Volume Size: 2G
+20 - Repeat line 16 to 19 for giving name as (swap, home, var, srv, tmp, var-log) and giving 1G as size.
+21 - Once you have all your lvm volume, finish.  
+22 - Select the size below each Logical Volume.
+23 - For most of them you'll have to select "Use as Ext4".
+24 - Then you'll have to select their mount point depending on which logical volume you target (Example: home Mount-Point = /home).  
+25 - There is two execeptions:  
+	- First from the swap you'll select "Use as: swap area".  
+	- Second, from var-log, you select "Use as: ext4" and then for mount point you enter it manually "/var/log".  
+26 - Finish Partitionning.  
 
 ## Add an SSH Server
 Log as root:  
